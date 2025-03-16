@@ -1,6 +1,9 @@
 // DecMove.cpp
 //
 
+typedef struct IUnknown IUnknown;
+
+
 #include "def.h"
 #include "decor.h"
 #include "misc.h"

@@ -1,6 +1,8 @@
 // DecBlupi.cpp
 //
 
+typedef struct IUnknown IUnknown;
+
 #include "misc.h"
 #include "decor.h"
 #include "text.h" // debug

@@ -1363,32 +1363,44 @@ POINT operator/(POINT p, const int& a)
 
 POINT& operator+=(POINT& p, const POINT& a)
 {
-	return POINT( p.x += a.x, p.y += a.y );
+	p.x += a.x;
+	p.y += a.y;
+	return p;
 }
 
 POINT& operator-=(POINT& p, const POINT& a)
 {
-	return POINT( p.x -= a.x, p.y -= a.y );
+	p.x -= a.x;
+	p.y -= a.y;
+	return p;
 }
 
 POINT& operator*=(POINT& p, const POINT& a)
 {
-	return POINT( p.x *= a.x, p.y *= a.y );
+	p.x *= a.x;
+	p.y *= a.y;
+	return p;
 }
 
 POINT& operator/=(POINT& p, const POINT& a)
 {
-	return POINT( p.x /= a.x, p.y /= a.y );
+	p.x /= a.x;
+	p.y /= a.y;
+	return p;
 }
 
 POINT& operator*=(POINT& p, const int& a)
 {
-	return POINT( p.x *= a, p.y *= a );
+	p.x *= a;
+	p.y *= a;
+	return p;
 }
 
 POINT& operator/=(POINT& p, const int& a)
 {
-	return POINT( p.x /= a, p.y /= a );
+	p.x /= a;
+	p.y /= a;
+	return p;
 }
 
 bool operator!=(POINT a, const POINT& b)

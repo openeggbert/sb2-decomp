@@ -1,6 +1,9 @@
 // CPixmap.cpp
 //
 
+
+typedef struct IUnknown IUnknown;
+
 #include <windows.h>
 #include <stdlib.h>
 #include <stdio.h>

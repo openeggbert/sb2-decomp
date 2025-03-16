@@ -6,6 +6,9 @@
  *  Content:    Routines for loading bitmap and palettes from resources
  *
  ***************************************************************************/
+
+typedef struct IUnknown IUnknown;
+
 #undef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>

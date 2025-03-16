@@ -1,6 +1,9 @@
 // Misc.cpp
 //
 
+typedef struct IUnknown IUnknown;
+
+
 #include <dsound.h>
 #include <ddraw.h>
 #include <stdio.h>

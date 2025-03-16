@@ -9,6 +9,8 @@
  *
  ******************************************************************/
 
+typedef struct IUnknown IUnknown;
+
 #include <windows.h>
 #include "wave.h"
 

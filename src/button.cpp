@@ -6,6 +6,8 @@
 //#include <stdio.h>
 //#include <ddraw.h>
 
+typedef struct IUnknown IUnknown;
+
 #ifndef POINT
 #include <windows.h>
 #endif

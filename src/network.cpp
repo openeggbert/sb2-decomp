@@ -1,6 +1,9 @@
 // Network.cpp
 //
 
+
+typedef struct IUnknown IUnknown;
+
 #include <stdio.h>
 #include <windows.h>
 #include "dplay.h"

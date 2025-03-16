@@ -1,6 +1,9 @@
 // movie.cpp
 //
 
+typedef struct IUnknown IUnknown;
+
+
 #include <windows.h>
 #include <windowsx.h>
 #include <commdlg.h>
@@ -33,7 +36,9 @@ BOOL CMovie::initAVI()
 	// set up the open parameters
 	mciOpen.dwCallback 		 = 0L;
 	mciOpen.wDeviceID 		 = 0;
-	mciOpen.lpstrDeviceType  = AVI_VIDEO;
+
+	char AVI_VIDEO_TEXT[] = AVI_VIDEO;
+	mciOpen.lpstrDeviceType = AVI_VIDEO_TEXT;
 	mciOpen.lpstrElementName = NULL;
 	mciOpen.lpstrAlias 		 = NULL;
 	mciOpen.dwStyle 		 = 0;

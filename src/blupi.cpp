@@ -3,9 +3,11 @@
 
 #define WIN32_LEAN_AND_MEAN
 
+typedef struct IUnknown IUnknown;
+
 #include <windows.h>
 #include <windowsx.h>
-#include <WTypes.h>
+#include <wtypes.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <mmsystem.h>

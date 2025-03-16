@@ -1,6 +1,8 @@
 // sound.cpp
 //
 
+typedef struct IUnknown IUnknown;
+
 #include "def.h"
 #if !_BASS || _LEGACY
 #include <dsound.h>

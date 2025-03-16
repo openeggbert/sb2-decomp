@@ -63,7 +63,7 @@ https://drive.openeggbert.com/other/Visual_Studio_Community_2017.exe
 
  - This (IDE) will be changed in the future
  
-#### Install v140 toolset for desktop
+#### Install v141 toolset for desktop
 
 #### Open the Project
 
@@ -77,11 +77,17 @@ Properties / Configuration Properties / C/C++ / Command Line / Additional Option
 
 Add : /wd4700 /wd4703
 
-#### Platform Toolset - v140
+#### Platform Toolset - v141
 
-Project Properties > General > change Platform Toolset from v140_xp to v140, 
+Project Properties > General > Set Platform Toolset to v141 
 
 #### Build
 
 Click with the right mouse button on "Speedy Eggbert 2 Source.sln"
  - launch Build/Build Speedy Eggbert 2 Source.sln
+
+## Notes
+
+This: is workaround: typedef struct IUnknown IUnknown;
+
+For error: >c:\program files (x86)\windows kits\8.1\include\um\combaseapi.h(229): error C2760: syntax error: unexpected token 'identifier', expected 'type specifier'

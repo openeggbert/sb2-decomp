@@ -1,6 +1,9 @@
 // Event.cpp
 //
 
+typedef struct IUnknown IUnknown;
+
+
 #include <windows.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -2423,7 +2426,9 @@ BOOL CEvent::DrawButtons()
 
 	if (m_phase == WM_PHASE_INIT)
 	{
-		DrawText(m_pPixmap, POINT( 414, 446 ), "Version 2.2", FONTLITTLE);
+		char version22[] = "Version 2.2";
+		DrawText(m_pPixmap, POINT(414, 446), version22, FONTLITTLE);
+		
 	}
 
 	if (m_phase == WM_PHASE_GAMER)
@@ -2909,7 +2914,10 @@ BOOL CEvent::DrawButtons()
 	// now that the decomp is looking convincingly like the retail game,
 	// we should clearly differentiate the two when sharing WIP screenshots/videos to reduce confusion.
 	{
-		DrawTextLeft(m_pPixmap, POINT(LXIMAGE - GetTextWidth("DECOMP -- " __DATE__), 0), "DECOMP -- " __DATE__, FONTGOLD);
+		
+		char DECOMP[] = "DECOMP -- " __DATE__;
+		DrawTextLeft(m_pPixmap, POINT(LXIMAGE - GetTextWidth(DECOMP), 0), DECOMP, FONTGOLD);
+		
 	}
 	///////
 
