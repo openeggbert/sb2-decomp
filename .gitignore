@@ -19,3 +19,10 @@
 /msvc5/sb2decomp/Debug
 /msvc5/sb2decomp/Release
 Speedy Eggbert 2 Source.vcxproj.user
+
+
+
+DATA/*
+IMAGE08/*
+IMAGE16/*
+SOUND/*
