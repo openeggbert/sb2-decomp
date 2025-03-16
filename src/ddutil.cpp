@@ -265,7 +265,7 @@ extern "C" IDirectDrawPalette * DDLoadPalette(IDirectDraw *pdd, LPCSTR szBitmap)
 /*
  * DDColorMatch
  *
- * convert a RGB color to a pysical color.
+ * convert a RGB color to a physical color.
  *
  * we do this by leting GDI SetPixel() do the color matching
  * then we lock the memory and see what it got mapped to.
