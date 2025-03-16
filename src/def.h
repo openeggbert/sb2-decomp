@@ -22,7 +22,7 @@
 #define _BYE			!_EGAMES // if TRUE, show exit image (like _INTRO)
 #define _LEGACY			FALSE	// if TRUE, keep broken/quirky legacy code
 #define _DREAM			TRUE	// if TRUE, allow Dream blocks when loading levels
-#define _BASS			TRUE	// if TRUE, use BASS audio library instead of DirectMusic (wip)
+#define _BASS			FALSE	// if TRUE, use BASS audio library instead of DirectMusic (wip)
 
 #define MAXGAMER		8
 #define MAXNETPLAYER	4

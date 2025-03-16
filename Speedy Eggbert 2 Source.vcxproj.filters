@@ -200,5 +200,8 @@
     <ClCompile Include="src\wave.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\soundold.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
