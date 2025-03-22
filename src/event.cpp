@@ -2291,7 +2291,10 @@ void CEvent::ChatPush(char *str)
 	int i; // eax
 	char *pText; // edx
 
-	for (i = 0; m_chatZone[0] != '\0'; i++)
+	//Todo
+	//This code was the original code before migrating to Platform Toolset v143. This code is not compatible with v143:
+	//for (i = 0; m_chatZone[0] != '\0'; i++)
+	for (i = 0; m_chatZone[0][i] != '\0'; i++)
 	{
 		if (i >= MAXCHAT)
 		{

@@ -15,8 +15,7 @@ Currently, no source code has been publicly released for Speedy Blupi.  We are u
 ## Future Suggestions
 
  - Migrate from DirectX 3 to SDL 3
- - Transition from Visual Studio 2017 to a more modern IDE
- - Make the project multiplatform, targeting Android and web browsers as well
+ - Make the game multiplatform, targeting Android and web browsers as well
 
 ## Development
  Some demangled symbol names are taken from the 2013 Windows Phone version of Speedy Blupi, which we inspected using ILSpy.  Big thanks to Ч.У.Ш on the 4PDA forum for archiving this obscure version of the game!!!
@@ -57,17 +56,13 @@ git submodule update
 
 ### How to setup the development environment locally
 
-#### Install "Microsoft Visual Studio Community 2017"
-
-https://drive.openeggbert.com/other/Visual_Studio_Community_2017.exe
-
- - This (IDE) will be changed in the future
+#### Install "Microsoft Visual Studio Community 2022
  
-#### Install v141 toolset for desktop
+#### Install v143 toolset for desktop
 
 #### Open the Project
 
-Click on "Speedy Eggbert 2 Source.sln" and select Open with "Microsoft Visual Studio 2017"
+Click on "Speedy Eggbert 2 Source.sln" and select Open with "Microsoft Visual Studio 2022"
 
 Set the Platform to x86 and Debugging to Win32.
 
@@ -77,9 +72,9 @@ Properties / Configuration Properties / C/C++ / Command Line / Additional Option
 
 Add : /wd4700 /wd4703
 
-#### Platform Toolset - v141
+#### Platform Toolset - v143
 
-Project Properties > General > Set Platform Toolset to v141 
+Project Properties > General > Set Platform Toolset to v143
 
 #### Build
 
